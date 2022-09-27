@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
 <body>
     <div class="container">
+
         <div class="row">
-            <div class="col-3">
+
+            <!-- Insert Navbar boilerplate !!! -->
+            
+            <div class="col-4 text-center" id="nav">
+
                 <div class="row">
                     <h1>Laura Delaney</h1>
                 </div>
+
                 <div class="row">
-                    <img src="data:image/jpeg;base64,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" class="rounded mx-auto d-block" alt="picture of Laura Delaney">
+                    <img src="data:image/jpeg;base64,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"
+                        class="rounded-lg" alt="picture of Laura Delaney">
                 </div>
-                <div class="row">
-                    <a href="index.html" role="button" class="btn btn-outline-dark">
-                        Blog
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="projects.html"  class="btn btn-outline-dark" role="button">
-                        Projects
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="about-me.html" class="btn btn-outline-dark" role="button">
-                        About Me
-                    </a>
-                </div>
-                
+
                 <div class="row text-center">
+                    <div class="btn-group-vertical" id="Page-redirect">
+                        <a href="index.html" class="btn btn-dark">
+                            Blog
+                        </a>
+
+                        <a href="projects.html" class="btn btn-dark">
+                            Projects
+                        </a>
+
+                        <a href="about_me.html" class="btn btn-dark">
+                            About me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
                     <div class="btn-group-vertical" id="Social-Cluster">
-                    
-                        <a href="" class="btn btn-light" role="button">
-                         LinkedIn
-                        </a>
-                        <a href="https://github.com/lauradelaney" target=" " class="btn btn-light" role="button">
-                         github
-                        </a>
-                        <a href="https://www.instagram.com/sfbayst/" target=" " class="btn btn-light" role="button">
-                         instagram
-                        </a>
-                        <a href="" class="btn btn-light" role="button">
-                         placeholder
-                        </a>
-                     </div>
+                        <div class="btn-group" role="group" aria-label="Pages">
+                            <a href="" class="btn btn-light col-6" role="button">
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/lauradelaney" target=" " class="btn btn-light col-6" role="button">
+                                github
+                            </a>
+                        </div>
+
+                        <div class="btn-group" role="group" aria-label="Pages-2">
+                            <a href="https://www.instagram.com/sfbayst/" target=" " class="btn btn-light col-6" role="button">
+                                instagram
+                            </a>
+                            <a href="" class="btn btn-light col-6" role="button">
+                                placeholder
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-9">
+
+            <!-- End Navbar boilerplate !!! -->
+
+            <div class="col-8">
                 blog section
             </div>
         </div>
     </div>
 </body>
+
 </html>
