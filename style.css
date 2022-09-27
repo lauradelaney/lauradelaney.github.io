@@ -1,13 +1,9 @@
-p {
-    color : green;
-}
-
 .col-9 {
     font-size: 30px;
 }
 
 .col-4 {
-    background-color: aqua;
+    background-color: green;
 }
 
 h1 {
