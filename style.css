@@ -1,9 +1,13 @@
-.col-9 {
-    font-size: 30px;
+body {
+    background: url('img/background.png') fixed;
+}
+
+#blog {
+    background-color: aliceblue;
 }
 
 .col-4 {
-    background-color: green;
+    background-color: royalblue;
 }
 
 h1 {
@@ -15,3 +19,7 @@ h1 {
     min-height: 100vh;
 }
 
+
+#blog-block {
+    background-color: white;
+}
